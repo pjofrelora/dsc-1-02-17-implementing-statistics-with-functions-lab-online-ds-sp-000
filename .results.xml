@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="1" failures="0" name="pytest" skips="0" tests="1" time="0.441"><testcase classname="" file="pytests/test_index.py" name="pytests.test_index" time="0"><error message="collection failure">ImportError while importing test module &apos;/home/pjofrelora/dsc-1-02-17-implementing-statistics-with-functions-lab-online-ds-sp-000/pytests/test_index.py&apos;.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/opt/conda/envs/learn-env/lib/python3.6/site-packages/ipynb/fs/full/__init__.py:29: in get_code
+    nb = json.load(f)
+/opt/conda/envs/learn-env/lib/python3.6/json/__init__.py:299: in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+/opt/conda/envs/learn-env/lib/python3.6/json/__init__.py:354: in loads
+    return _default_decoder.decode(s)
+/opt/conda/envs/learn-env/lib/python3.6/json/decoder.py:339: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+/opt/conda/envs/learn-env/lib/python3.6/json/decoder.py:355: in raw_decode
+    obj, end = self.scan_once(s, idx)
+E   json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1024 column 1 (char 89424)
+
+During handling of the above exception, another exception occurred:
+pytests/test_index.py:7: in &lt;module&gt;
+    from ipynb.fs.full.index import * # variable names go here
+/opt/conda/envs/learn-env/lib/python3.6/site-packages/ipynb/fs/full/__init__.py:34: in get_code
+    fn=fullname
+E   ImportError: Could not import /home/pjofrelora/dsc-1-02-17-implementing-statistics-with-functions-lab-online-ds-sp-000/index.ipynb for ipynb.fs.full.index: not a valid ipynb file</error></testcase></testsuite>
